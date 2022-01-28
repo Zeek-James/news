@@ -8,17 +8,12 @@ import { LoadingService } from './services/loading.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  // loading$ = this.loader.loading$;
   typeSelected: string;
 
-  // constructor(public loader: LoadingService) {
   constructor(
     public spinnerService: NgxSpinnerService,
-    // public loader: LoadingService
     public loaderService: LoadingService
-  ) {
-    // this.typeSelected = 'ball-atom';
-  }
+  ) {}
 
   ngOnInit() {
     this.spinnerService.show();
