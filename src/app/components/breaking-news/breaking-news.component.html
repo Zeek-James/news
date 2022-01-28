@@ -6,7 +6,7 @@
                 <h4>{{n.description}}</h4>
                 <h4>{{n.full_description}}</h4>
                 <div class="creator-date">
-                    <h5>By: {{n.creator}}</h5>
+                    <h5 *ngIf="n?.creator">By: {{n.creator}}</h5>
                     <h6>{{n.pubDate}}</h6>
                 </div>
             </div>

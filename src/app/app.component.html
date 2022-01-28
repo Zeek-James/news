@@ -2,7 +2,9 @@
 
     <app-nav-bar></app-nav-bar>
     <app-banner></app-banner>
+    Hello
+    <ngx-spinner size="medium" type="ball-atom" *ngIf="loaderService.isLoading | async">Hello</ngx-spinner>
+    Hi
     <app-breaking-news></app-breaking-news>
     <app-footer></app-footer>
-    <!-- <app-button color="green" text="Add" (btnClick)="toggle()"></app-button> -->
 </div>
