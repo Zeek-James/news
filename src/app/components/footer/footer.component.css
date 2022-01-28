@@ -1,0 +1,42 @@
+footer {
+  background: aliceblue;
+  min-height: 400px;
+}
+
+.header {
+  padding: 5px 30px;
+  background: rgb(217, 220, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  flex-grow: 1;
+}
+
+h4 {
+  margin-right: 15px;
+}
+
+.infoCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+}
+
+.infos {
+  border-right: solid 1px black;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100px;
+}
+
+h5 {
+  text-align: center;
+  margin-bottom: 2px;
+}

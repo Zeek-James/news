@@ -1,0 +1,20 @@
+<div class="container">
+    <div *ngFor="let n of news" class="newsCont">
+        <div class="newsContainer">
+            <div class="newsInfo">
+                <h3>{{n.title}}</h3>
+                <h4>{{n.description}}</h4>
+                <h4>{{n.full_description}}</h4>
+                <div class="creator-date">
+                    <h5>By: {{n.creator}}</h5>
+                    <h6>{{n.pubDate}}</h6>
+                </div>
+            </div>
+            <img src={{n.image_url}} alt="">
+
+        </div>
+        <h6>{{n.video_url}}</h6>
+
+    </div>
+
+</div>

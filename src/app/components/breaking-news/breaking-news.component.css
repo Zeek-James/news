@@ -1,0 +1,48 @@
+.container {
+  margin: 30px;
+  padding: 30px;
+  background: aliceblue;
+}
+
+.newsContainer {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 30px;
+  border-bottom: darkcyan 1px solid;
+}
+
+.newCont {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsInfo {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+h4 {
+  flex-grow: 1;
+}
+
+h5 {
+  margin-right: 20px;
+  color: grey;
+}
+
+h6 {
+  color: darkcyan;
+}
+.creator-date {
+  display: flex;
+}
+
+img {
+  height: 400px;
+  object-fit: contain;
+}
