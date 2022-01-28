@@ -16,10 +16,10 @@ export class NetworkInterceptor implements HttpInterceptor {
     request: HttpRequest<unknown>,
     next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
-    // this.loader.show();
+    this.loader.isLoading.next(true);
     return next.handle(request).pipe(
       finalize(() => {
-        // this.loader.hide();
+        this.loader.isLoading.next(false);
       })
     );
   }

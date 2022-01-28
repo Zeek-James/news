@@ -17,15 +17,10 @@ export class AppComponent {
     // public loader: LoadingService
     public loaderService: LoadingService
   ) {
-    this.typeSelected = 'ball-atom';
+    // this.typeSelected = 'ball-atom';
   }
 
   ngOnInit() {
     this.spinnerService.show();
   }
-  // public showSpinner(): void {
-  //   setTimeout(() => {
-  //     this.spinnerService.hide();
-  //   }, 5000); // 5 seconds
-  // }
 }

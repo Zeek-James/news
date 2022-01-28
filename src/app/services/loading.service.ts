@@ -7,8 +7,6 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class LoadingService {
   typeSelected: string;
-  // private _loading = new BehaviorSubject<boolean>(false);
-  // public readonly loading$ = this._loading.asObservable();
 
   public isLoading: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
     // false
@@ -16,16 +14,4 @@ export class LoadingService {
   );
 
   constructor() {}
-
-  // show() {
-  //   this._loading.next(true);
-  //   console.log('loading');
-  //   // this.spinnerService.show();
-  // }
-
-  // hide() {
-  //   console.log('not loading');
-
-  //   this._loading.next(false);
-  // }
 }
