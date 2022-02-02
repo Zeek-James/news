@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { News } from '../../News';
+import { ActivatedRoute } from '@angular/router';
 import { NewsService } from '../../services/news.service';
 
 @Component({
@@ -11,18 +11,42 @@ export class BreakingNewsComponent implements OnInit {
   news: any = [];
   result: any = [];
 
-  constructor(private newsService: NewsService) {
+  constructor(private newsService: NewsService, private route: ActivatedRoute) {
     this.news = [];
   }
 
   ngOnInit(): void {
-    // debugger;
-    console.log('hello');
-    const res = this.newsService.getNews().subscribe((res) => {
-      // debugger;
-      this.result = res;
-      this.news = this.result.results;
-      console.log(this.news);
+    this.route.params.subscribe((params) => {
+      if (params['newsSearch']) {
+        console.log(params);
+        this.newsService.getNews().subscribe((res) => {
+          this.result = res;
+          const data = this.result.results;
+          const filteredData = data.filter(
+            (n: { title: { toLowerCase: () => string | any[] } }) =>
+              n.title.toLowerCase().includes(params['newsSearch'].toLowerCase())
+          );
+
+          this.news = filteredData;
+        });
+        this.news.filter(
+          (n: { title: { toLowerCase: () => string | any[] } }) =>
+            n.title.toLowerCase().includes(params['newsSearch'].toLowerCase())
+        );
+      } else {
+        this.newsService.getNews().subscribe((res) => {
+          this.result = res;
+          const data = this.result.results;
+          this.news = data;
+        });
+      }
+      // this.newsService.getNews().subscribe((res) => {
+      //   this.result = res;
+      //   const data = this.result.results;
+      //   this.news = data;
+      //   console.log(this.result.results);
+      //   console.log(data);
+      // });
     });
   }
 }

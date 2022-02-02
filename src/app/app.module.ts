@@ -12,6 +12,10 @@ import { BreakingNewsComponent } from './components/breaking-news/breaking-news.
 import { BannerComponent } from './components/banner/banner.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NetworkInterceptor } from './interceptors/network.interceptor';
+import { SearchComponent } from './components/search/search.component';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,8 @@ import { NetworkInterceptor } from './interceptors/network.interceptor';
     BreakingNewsComponent,
     BannerComponent,
     FooterComponent,
+    SearchComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +34,8 @@ import { NetworkInterceptor } from './interceptors/network.interceptor';
     FormsModule,
     NgxSpinnerModule,
     HttpClientModule,
+    AppRoutingModule,
+    RouterModule,
   ],
   providers: [
     {

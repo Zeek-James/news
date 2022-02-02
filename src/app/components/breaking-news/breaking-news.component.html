@@ -1,18 +1,18 @@
 <div class="container">
-    <div *ngFor="let n of news" class="newsCont">
-        <div class="newsContainer">
-            <div class="newsInfo">
-                <h3>{{n.title}}</h3>
+    <div *ngFor="let n of news" class="newsContainer">
+        <div class="newsInfo">
+            <h3>{{n.title}}</h3>
+            <div class="newCont ">
                 <h4>{{n.description}}</h4>
-                <h4>{{n.full_description}}</h4>
-                <div class="creator-date">
-                    <h5 *ngIf="n?.creator">By: {{n.creator}}</h5>
-                    <h6>{{n.pubDate}}</h6>
-                </div>
+                <img src={{n.image_url}} alt="" *ngIf="n?.image_url">
             </div>
-            <img src={{n.image_url}} alt="">
-
+            <p *ngIf="n?.full_description">{{n.full_description}}</p>
+            <div class="creator-date">
+                <h5 *ngIf="n?.creator">By: {{n.creator}}</h5>
+                <h6>{{n.pubDate}}</h6>
+            </div>
         </div>
+
         <h6>{{n.video_url}}</h6>
 
     </div>

@@ -9,7 +9,7 @@ import { News } from '../News';
 export class NewsService {
   // private apiUrl = 'https://newsdata.io/api/1/news';
   private apiUrl =
-    'https://newsdata.io/api/1/news?apikey=pub_39807bd3f222ffb91f747a1c820bc06ec9df&language=fr';
+    'https://newsdata.io/api/1/news?apikey=pub_39807bd3f222ffb91f747a1c820bc06ec9df&language=en';
 
   constructor(private http: HttpClient) {}
 

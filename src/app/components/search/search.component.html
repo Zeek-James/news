@@ -1,0 +1,4 @@
+<div class="searchCont">
+    <app-button (btnClick)='search()' text='Search'>Search</app-button>
+    <input type="search" placeholder="Search quans" [(ngModel)]='newsSearch' (change)='search()' class='search'>
+</div>

@@ -10,8 +10,14 @@
 
 .btnContainer {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   justify-self: center;
   align-self: center;
   align-items: center;
+}
+
+.btn {
+  padding: 5px 15px;
+  /* font-size: large; */
+  text-transform: capitalize;
 }
