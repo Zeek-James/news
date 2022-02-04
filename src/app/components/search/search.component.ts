@@ -16,11 +16,8 @@ export class SearchComponent implements OnInit {
         this.newsSearch = params['newsSearch'];
       }
     });
-    console.log('hello');
   }
   search() {
-    console.log('hello');
-
     if (this.newsSearch) {
       this.router.navigateByUrl('/search/' + this.newsSearch);
     }

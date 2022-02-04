@@ -1,8 +1,10 @@
 <div>
 
     <app-nav-bar></app-nav-bar>
-
+    <app-banner></app-banner>
+    <app-top></app-top>
     <router-outlet></router-outlet>
+    <app-top></app-top>
     <ngx-spinner size="medium" type="ball-atom" *ngIf="loaderService.isLoading | async"></ngx-spinner>
     <app-footer></app-footer>
 </div>

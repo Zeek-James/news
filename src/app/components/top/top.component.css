@@ -1,0 +1,17 @@
+h4 {
+  margin: 20px 20px;
+  font-weight: 700;
+}
+
+marquee {
+  color: teal;
+  margin-top: 20px;
+}
+
+span {
+  color: brown;
+}
+
+span span {
+  color: #555;
+}

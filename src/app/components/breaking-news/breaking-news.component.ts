@@ -37,6 +37,7 @@ export class BreakingNewsComponent implements OnInit {
         this.newsService.getNews().subscribe((res) => {
           this.result = res;
           const data = this.result.results;
+          console.log(data);
           this.news = data;
         });
       }

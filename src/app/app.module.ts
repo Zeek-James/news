@@ -16,6 +16,13 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { TechComponent } from './components/tech/tech.component';
+import { EnvComponent } from './components/env/env.component';
+import { FoodComponent } from './components/food/food.component';
+import { EntComponent } from './components/ent/ent.component';
+import { BizzComponent } from './components/bizz/bizz.component';
+import { PolComponent } from './components/pol/pol.component';
+import { TopComponent } from './components/top/top.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +34,13 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     SearchComponent,
     HomeComponent,
+    TechComponent,
+    EnvComponent,
+    FoodComponent,
+    EntComponent,
+    BizzComponent,
+    PolComponent,
+    TopComponent,
   ],
   imports: [
     BrowserModule,
